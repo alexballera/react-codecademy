@@ -1,0 +1,19 @@
+{
+  "name": "react-codecademy",
+  "version": "1.0.0",
+  "description": "Curso de React de Codecademy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexballera/react-codecademy.git"
+  },
+  "author": "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexballera/react-codecademy/issues"
+  },
+  "homepage": "https://github.com/alexballera/react-codecademy#readme"
+}
