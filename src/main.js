@@ -3,6 +3,7 @@ import tether from 'tether'
 global.Tether = tether
 require('bootstrap')
 import test from './js/lib/test.js'
+import app from './app.jsx'
 
 (() => {
   'use strict'
@@ -11,5 +12,6 @@ import test from './js/lib/test.js'
 
   function onDOMLoad () {
     test()
+    app()
   }
 })()
