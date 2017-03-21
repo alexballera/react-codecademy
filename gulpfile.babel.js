@@ -18,6 +18,6 @@ gulp.task('build', ['copy', 'inject'], () => {
 
 // Default
 gulp.task('default', ['clean'], () => {
-  gulp.start('serve', 'watch', 'build')
+  gulp.start('apply-prod-environment', 'serve', 'watch', 'build')
   // gulp.start('watch', 'build')
 })
