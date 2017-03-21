@@ -2,7 +2,6 @@ global.jQuery = require('jquery')
 import tether from 'tether'
 global.Tether = tether
 require('bootstrap')
-import test from './js/lib/test.js'
 import app from './app.jsx'
 
 (() => {
@@ -11,7 +10,6 @@ import app from './app.jsx'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    test()
     app()
   }
 })()
