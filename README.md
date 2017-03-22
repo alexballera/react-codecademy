@@ -1,13 +1,18 @@
 # Curso de React de Codecademy
 
+## Apply Production Environment
+    gulp.task('apply-prod-environment', () => {
+      process.env.NODE_ENV = 'production'
+    })
+
 ## Estructura Básica
 
 Se importan las librerías
 
-El método render abre y cierra con paréntesis " () "
-
     import React from 'react'
     import ReactDOM from 'react-dom'
+
+El método render abre y cierra con paréntesis " () "
 
     ReactDOM.render(
       <h1>Hola Mundo</h1>,
