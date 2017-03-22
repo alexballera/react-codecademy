@@ -58,7 +58,6 @@
     "require-dir": "^0.3.1",
     "sass-lint": "^1.10.2",
     "stream-series": "^0.1.1",
-    "tether": "^1.4.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
@@ -69,12 +68,11 @@
     "empty-element": "^1.0.0",
     "eslint": "^3.18.0",
     "gulp-util": "^3.0.8",
-    "install": "^0.8.7",
     "jquery": "^3.2.1",
-    "npm": "^4.4.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "reactify": "^1.1.1",
-    "standard": "^9.0.2"
+    "standard": "^9.0.2",
+    "tether": "^1.4.0"
   }
 }

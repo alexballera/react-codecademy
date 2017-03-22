@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom'
 module.exports = () => {
   ReactDOM.render(
     <h1>Hola Mundo</h1>,
-    document.getElementById('main')
+    document.getElementById('basico')
   )
   ReactDOM.render(
     <div>
@@ -16,6 +16,52 @@ module.exports = () => {
         Adipisci, quibusdam?
       </p>
     </div>,
-    document.getElementById('main')
+    document.getElementById('bloque')
+  )
+  // Componentes
+  var Titulo = React.createClass({
+    render: function () {
+      return (
+        <h1>Componente Básico</h1>
+      )
+    }
+  })
+
+  ReactDOM.render(
+    <Titulo />,
+    document.getElementById('componente-basico')
+  )
+
+  // Component class
+  var friends = [
+    {
+      title: 'Yummmmmmm',
+      src: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-monkeyweirdo.jpg'
+    },
+    {
+      title: 'Hey Guys!  Wait Up!',
+      src: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-earnestfrog.jpg'
+    },
+    {
+      title: 'Yikes',
+      src: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-alpaca.jpg'
+    }
+  ]
+
+  var Friend = React.createClass({
+    render: function () {
+      var friend = friends[2]
+      return (
+        <div>
+          <h1>{friend.title}</h1>
+          <img src={friend.src} width='200' />
+        </div>
+      )
+    }
+  })
+
+  ReactDOM.render(
+    <Friend />,
+    document.getElementById('component-class')
   )
 }
