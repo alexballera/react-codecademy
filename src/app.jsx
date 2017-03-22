@@ -64,4 +64,24 @@ module.exports = () => {
     <Friend />,
     document.getElementById('component-class')
   )
+
+  // Uso de condicionales
+  var fiftyFifty = Math.random() < 0.5
+  console.log(fiftyFifty)
+
+  var TodaysPlan = React.createClass({
+    render: function () {
+      var task
+      if (!fiftyFifty) {
+        task = 'out'
+      } else {
+        task = 'to bed'
+      }
+      return <h1>Tonight I'm going {task} WOOO</h1>
+    }
+  })
+  ReactDOM.render(
+    <TodaysPlan />,
+    document.getElementById('TodaysPlan')
+  )
 }
