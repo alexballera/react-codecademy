@@ -88,4 +88,15 @@ module.exports = () => {
     <TodaysPlan />,
     document.getElementById('TodaysPlan')
   )
+
+  // Uso de Props
+  var Saludo = React.createClass({
+    render: function () {
+      return <h1>Saludos usando Props!, Hola {this.props.nombre}</h1>
+    }
+  })
+  ReactDOM.render(
+    <Saludo nombre='Alex Ballera' />,
+    document.getElementById('componente-props')
+  )
 }
