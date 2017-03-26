@@ -2,6 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import NavBar from './componentes/NavBar.jsx'
 
 module.exports = () => {
   ReactDOM.render(
@@ -22,7 +23,10 @@ module.exports = () => {
   var Titulo = React.createClass({
     render: function () {
       return (
-        <h1>Componente Básico</h1>
+        <div>
+          <h1>Componente Básico Con Barra De Navegación</h1>
+          <NavBar />
+        </div>
       )
     }
   })
