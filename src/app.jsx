@@ -3,6 +3,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import NavBar from './componentes/NavBar.jsx'
+import Saludar from './componentes/Saludar.jsx'
 
 module.exports = () => {
   ReactDOM.render(
@@ -90,13 +91,15 @@ module.exports = () => {
   )
 
   // Uso de Props
-  var Saludo = React.createClass({
+  var ComponenteProps = React.createClass({
     render: function () {
-      return <h1>Saludos usando Props!, Hola {this.props.nombre}</h1>
+      return (
+        <Saludar nombre='Alex Ballera' />
+      )
     }
   })
   ReactDOM.render(
-    <Saludo nombre='Alex Ballera' />,
+    <ComponenteProps />,
     document.getElementById('componente-props')
   )
 }
