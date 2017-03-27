@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import NavBar from './components/NavBar.jsx'
 import Saludar from './components/Saludar.jsx'
+import Saludando from './components/Saludando.jsx'
 
 module.exports = () => {
   ReactDOM.render(
@@ -101,5 +102,30 @@ module.exports = () => {
   ReactDOM.render(
     <ComponenteProps />,
     document.getElementById('componente-props')
+  )
+
+  /**
+   * Uso de Props y Modulado
+   */
+
+  var App = React.createClass({
+    render: function () {
+      return (
+        <div>
+          <h1>
+            Hullo and, 'Welcome to The Newzz,' 'On Line!'
+          </h1>
+          <Saludando name='Alex Ballera' signedIn />
+          <article>
+            Latest:  where is my phone?
+          </article>
+        </div>
+      )
+    }
+  })
+
+  ReactDOM.render(
+    <App />,
+    document.getElementById('app')
   )
 }
