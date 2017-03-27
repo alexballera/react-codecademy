@@ -143,7 +143,7 @@ module.exports = () => {
     },
 
     render: function () {
-      return <Button handleClick={this.handleClick} />
+      return <Button onClick={this.handleClick} />
     }
   })
   ReactDOM.render(

@@ -4,7 +4,7 @@ import React from 'react'
 var Button = React.createClass({
   render: function () {
     return (
-      <button onClick={this.props.handleClick}>Click Me!</button>
+      <button onClick={this.props.onClick}>Click Me!</button>
     )
   }
 })
