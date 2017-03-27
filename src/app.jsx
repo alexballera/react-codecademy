@@ -2,8 +2,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import NavBar from './componentes/NavBar.jsx'
-import Saludar from './componentes/Saludar.jsx'
+import NavBar from './components/NavBar.jsx'
+import Saludar from './components/Saludar.jsx'
 
 module.exports = () => {
   ReactDOM.render(
