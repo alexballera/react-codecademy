@@ -6,6 +6,6 @@ gulp.watch([
   './src/**/*.scss',
   './src/main.js',
   './src/app.jsx',
-  './src/componentes/*.jsx',
+  './src/components/**/*.jsx',
   './src/js/lib/*.js'
 ]).on('change', browserSync.reload)
