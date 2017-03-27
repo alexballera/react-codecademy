@@ -165,4 +165,30 @@ module.exports = () => {
     <State />,
     document.getElementById('state')
   )
+  var green = '#39D1B4'
+  var yellow = '#FFD712'
+
+  var Toggle = React.createClass({
+    getInitialState: function () {
+      return {color: green}
+    },
+    changeColor: function () {
+      var newColor = this.state.color === green ? yellow : green
+      this.setState({color: newColor})
+    },
+    render: function () {
+      return (
+        <div style={{background: this.state.color}}>
+          <button onClick={this.changeColor} >
+            Change Color
+          </button>
+        </div>
+      )
+    }
+  })
+  ReactDOM.render(
+    <Toggle />,
+    document.getElementById('state-toggle')
+  )
+
 }
