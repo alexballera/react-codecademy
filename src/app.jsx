@@ -150,4 +150,19 @@ module.exports = () => {
     <Talker />,
     document.getElementById('eventHandler')
   )
+
+  var State = React.createClass({
+    getInitialState: function () {
+      return {title: 'Titulo con State'}
+    },
+    render: function () {
+      return (
+        <h1>{this.state.title}</h1>
+      )
+    }
+  })
+  ReactDOM.render(
+    <State />,
+    document.getElementById('state')
+  )
 }
