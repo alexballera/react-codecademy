@@ -9,9 +9,7 @@ var NavBar = React.createClass({
     var pages = ['Home', 'Acerca', 'Servicios', 'Blog', 'Contacto']
     var navLinks = pages.map((page, index) => {
       return (
-        <li key={index}>
-          <a href={'/' + page} >{page}</a>
-        </li>
+        <a key={index} href={'/' + page} >{page}</a>
       )
     })
     return <nav>{navLinks}</nav>

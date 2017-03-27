@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import NavBar from './components/NavBar.jsx'
 import Saludar from './components/Saludar.jsx'
 import Saludando from './components/Saludando.jsx'
+import Button from './components/Button.jsx'
 
 module.exports = () => {
   ReactDOM.render(
@@ -127,5 +128,26 @@ module.exports = () => {
   ReactDOM.render(
     <App />,
     document.getElementById('app')
+  )
+
+  /**
+   * Event handler function, se agrega dentro de createClass
+   * por convencións e nombra handler + evento, p.e handlerClick
+   */
+  var Talker = React.createClass({
+    handleClick: function () {
+      for (var speech = '', i = 0; i < 10000; i++) {
+        speech += 'Blah'
+      }
+      alert(speech)
+    },
+
+    render: function () {
+      return <Button handleClick={this.handleClick} />
+    }
+  })
+  ReactDOM.render(
+    <Talker />,
+    document.getElementById('eventHandler')
   )
 }
